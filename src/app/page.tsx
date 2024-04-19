@@ -67,7 +67,7 @@ export default function Home() {
             : show && (
                 <div className="flex items-center w-full   lg:max-w-6xl flex-col justify-center gap-3">
                   <div>
-                    <p className="text-4xl  ">Selected Trainers</p>
+                    <p className="text-4xl  ">Selected People</p>
                   </div>
                   <div className="flex justify-center p-4 flex-col sm:flex-row gap-5 w-full flex-wrap">
                     {dataFromJson &&
