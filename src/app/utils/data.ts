@@ -1,7 +1,7 @@
 import Profile from "../../../public/portrait.jpeg";
 import ProfileOne from "../../../public/profileOne.jpg";
 import ProfileTwo from "../../../public/profileTwo.jpg";
-import ProfileThree from "../../../public/profileThree.jpg";
+import ProfileThree from "../../../public/ProfileThree.jpg";
 import ProfileFour from "../../../public/profileFour.jpg";
 
 export const cardData = [
