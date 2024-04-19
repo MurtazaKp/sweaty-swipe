@@ -61,7 +61,7 @@ const Card = ({ data, active, removeCard, dataFromJson }: any) => {
       {active ? (
         <motion.div
           drag="x"
-          className="card absolute z-30 flex h-[438px] w-[300px] items-center justify-center self-center text-3xl font-bold"
+          className="card absolute z-30 flex h-[438px] w-[300px] items-center justify-center self-center text-3xl font-bold "
           onDragEnd={dragEnd}
           initial={{ scale: 0.95, opacity: 0.5 }}
           animate={{
@@ -73,7 +73,7 @@ const Card = ({ data, active, removeCard, dataFromJson }: any) => {
           whileDrag={{ cursor: "grabbing" }}
           exit={{ x: exitX }}
         >
-          <div className="  m-auto w-[calc(100%-20px)]  rounded-[20px] border-2 border-[#9F9F9F80]">
+          <div className="  m-auto w-[calc(100%-20px)]  rounded-[20px] border-2 border-[#9F9F9F80] pb-3">
             <div className="">
               <div className="relative h-[269px] w-full overflow-hidden rounded-b-xl">
                 <Image
