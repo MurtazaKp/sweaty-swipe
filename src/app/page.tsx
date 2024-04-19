@@ -7,6 +7,7 @@ import Card from "./components/card";
 import { cardData } from "./utils/data";
 import { CardData } from "./types";
 import getDataFromJsonServer from "./api/getData";
+import Link from "next/link";
 
 export default function Home() {
   const [cards, setCards] = useState<CardData[]>(cardData);
@@ -92,10 +93,14 @@ export default function Home() {
                                 </p>
                               </div>
                             </div>
-                            <button className="rounded bg-indigo-500 p-2 font-bold text-neutral-50  hover:bg-indigo-700 ">
+                            <a
+                              href="https://socket-io-frontend-three.vercel.app/"
+                              target="_blank"
+                              className="rounded bg-indigo-500 p-2 font-bold text-neutral-50  hover:bg-indigo-700 "
+                            >
                               {" "}
                               Chat Now
-                            </button>
+                            </a>
                           </div>
                         );
                       })}

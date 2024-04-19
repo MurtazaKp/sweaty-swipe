@@ -1,11 +1,14 @@
 export default async function getDataFromJsonServer() {
   try {
-    const response = await fetch(`http://localhost:8000/intrestedPeople`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      `https://json-server-goqt.onrender.com/intrestedPeople`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const res = await response.json();
     console.log("response", res);
     if (response.ok) {
