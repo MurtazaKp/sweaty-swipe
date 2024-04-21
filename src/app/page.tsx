@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="relative flex lg:h-screen w-full items-center sm:justify-center 
+        className="relative flex h-screen w-full items-center justify-center 
        bg-bgBlack text-textGrey"
       >
         <AnimatePresence>
@@ -66,17 +66,17 @@ export default function Home() {
                 />
               ))
             : show && (
-                <div className="flex items-center w-full   lg:max-w-6xl flex-col justify-center gap-3">
+                <div className="flex items-center w-full   max-w-6xl flex-col justify-center gap-3">
                   <div>
-                    <p className="text-4xl  ">Selected People</p>
+                    <p className="text-4xl">Selected People</p>
                   </div>
-                  <div className="flex justify-center p-4 flex-col sm:flex-row gap-5 w-full flex-wrap">
+                  <div className="flex justify-center p-4 flex-row gap-5 w-full flex-wrap">
                     {dataFromJson &&
                       dataFromJson.map((data: any, index: number) => {
                         return (
                           <div
                             key={index}
-                            className="flex h-40 w-full sm:basis-1/2 lg:basis-1/4 flex-col justify-center gap-2 rounded-lg bg-neutral-50 p-2 shadow"
+                            className="flex h-40 w-full  basis-1/4 flex-col justify-center gap-2 rounded-lg bg-neutral-50 p-2 shadow"
                           >
                             <div className="flex gap-2">
                               <img
